@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+body{
+    overflow-x: hidden;
+}
+.main{
+    height: 100px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+}
+.navbar ul li{
+    padding: 25px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+i{
+    font-size: 20px;
+}
+.icon p,i{
+    color: white;
+}
+.img{
+    height: 100vh; 
+    /* vh = view port height */
+    /* vw = view port width */
+    background-image: url('../image/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.icon{
+    padding-top: 34px;
+}
+.bar{
+    display: none;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.text{
+    z-index: 1;
+    width: 50%;
+    /* background-color: red; */
+}
+.text p{
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.text h1{
+    font-size: 60px;
+    line-height: 60px;
+}
+button{
+    display: block;
+    margin: auto;
+    width: 120px;
+    height: 45px;
+    border: none;
+    margin-top: 30px;
+}
+.shop{
+    margin-top: 23px;
+}
+.image-box img{
+    width: 100%;
+}
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+@media (max-width : 450px){
+    .bar{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+    .icon{
+        margin-top: -20px;
+    }
+    .fa-user{
+        display: none !important;
+    }
+    .main h4{
+        margin-top: 2px;
+        color: white;
+    }
+    .icon p,i{
+        color: white;
+    }
+    .text{
+        width: 100%;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .text h1{
+        font-size: 30px;
+    }   
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 451px) and (max-width:767px) { 
+    .bar{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+    .icon{
+        margin-top: -20px;
+    }
+    .fa-user{
+        display: none !important;
+    }
+    .main h4{
+        margin-top: 2px;
+        color: white;
+    }
+    .icon p,i{
+        color: white;
+    }
+    .text{
+        width: 85%;
+        margin-top: 30px !important;
+        /* background-color: red !important; */
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .text h1{
+        font-size: 20px !important;
+    } 
+}  
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width:991px) {
+    .bar{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+    .icon{
+        margin-top: -20px;
+    }
+    .fa-user{
+        display: none !important;
+    }
+    .main h4{
+        margin-top: 2px;
+        color: white;
+    }
+    .icon p,i{
+        color: white;
+    }
+    .text{
+        width: 75%;
+    }
+    .text p{
+        font-size: 15px;
+        margin-top: 30px;
+    }
+    .text h1{
+        font-size: 30px;
+    } 
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width:1199px) { 
+    .text{
+        width: 75%;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .text h1{
+        font-size: 40px;
+    }
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
